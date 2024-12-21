@@ -24,9 +24,6 @@ def part1():
         column2.remove(min(column2))
     return a
 
-
-
-
 def part2():
     column1, column2 = get_data()
     b = 0
@@ -34,5 +31,4 @@ def part2():
         # count the similarity score in column2
         sim_score = column2.count(i)
         b += i*sim_score
-
     return b
