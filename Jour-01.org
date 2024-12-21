@@ -17,7 +17,6 @@ Dans tout le bureau du chef, les lieux d'importance historique ne sont pas répe
 Il y a juste un problème : en tenant les deux listes côte à côte (votre entrée de puzzle), il devient rapidement évident que les listes ne sont pas très similaires. Peut-être pouvez-vous aider les historiens à réconcilier leurs listes ?
 
 Par exemple:
-
 #+begin_example
 3   4
 4   3
@@ -33,12 +32,14 @@ Dans chaque paire, déterminez la distance qui sépare les deux nombres ; vous d
 
 Dans la liste d'exemples ci-dessus, les paires et les distances seraient les suivantes :
 
-Le plus petit nombre dans la liste de gauche est 1, et le plus petit nombre dans la liste de droite est 3. La distance entre eux est 2.
-Le deuxième plus petit nombre de la liste de gauche est 2, et le deuxième plus petit nombre de la liste de droite est un autre 3. La distance entre eux est 1.
-Le troisième plus petit nombre dans les deux listes est 3, donc la distance entre eux est 0.
-Les prochains numéros à associer sont 3et 4, à une distance de 1.
-Les cinquièmes plus petits nombres de chaque liste sont 3et 5, à une distance de 2.
-Finalement, le plus grand nombre dans la liste de gauche est 4, tandis que le plus grand nombre dans la liste de droite est 9; ceux-ci sont éloignés 5.
+- Le plus petit nombre dans la liste de gauche est 1, et le plus petit nombre dans la liste de droite est 3. La distance entre eux est 2.
+- Le deuxième plus petit nombre de la liste de gauche est 2, et le deuxième plus petit nombre de la liste de droite est un autre 3. La distance entre eux 
+  est 1.
+- Le troisième plus petit nombre dans les deux listes est 3, donc la distance entre eux est 0.
+- Les prochains numéros à associer sont 3 et 4, à une distance de 1.
+- Les cinquièmes plus petits nombres de chaque liste sont 3et 5, à une distance de 2.
+- Finalement, le plus grand nombre dans la liste de gauche est 4, tandis que le plus grand nombre dans la liste de droite est 9; ceux-ci sont éloignés 5.
+
 Pour trouver la distance totale entre la liste de gauche et la liste de droite, additionnez les distances entre toutes les paires que vous avez trouvées. Dans l'exemple ci-dessus, cela correspond à 2 + 1 + 0 + 1 + 2 + 5, une distance totale de 11!
 
 Vos listes de gauche et de droite contiennent de nombreux identifiants d'emplacement. Quelle est la distance totale entre vos listes ?
@@ -67,13 +68,14 @@ Voici à nouveau les mêmes exemples de listes :
 
 Pour ces exemples de listes, voici le processus de recherche du score de similarité :
 
-Le premier nombre de la liste de gauche est 3. Il apparaît trois fois dans la liste de droite, donc le score de similarité augmente de .3 * 3 = 9
-Le deuxième nombre dans la liste de gauche est 4. Il apparaît une fois dans la liste de droite, donc le score de similarité augmente de .4 * 1 = 4
-Le troisième nombre dans la liste de gauche est 2. Il n'apparaît pas dans la liste de droite, donc le score de similarité n'augmente pas ( 2 * 0 = 0).
-Le quatrième numéro, 1, n'apparaît pas non plus dans la liste de droite.
-Le cinquième numéro, 3, apparaît trois fois dans la liste de droite ; le score de similarité augmente de 9.
-Le dernier numéro, 3, apparaît trois fois dans la liste de droite ; le score de similarité augmente à nouveau de 9.
-Ainsi, pour ces listes d’exemples, le score de similarité à la fin de ce processus est 31( 9 + 4 + 0 + 0 + 9 + 9).
+- Le premier nombre de la liste de gauche est 3. Il apparaît trois fois dans la liste de droite, donc le score de similarité augmente de .3 * 3 = 9
+- Le deuxième nombre dans la liste de gauche est 4. Il apparaît une fois dans la liste de droite, donc le score de similarité augmente de .4 * 1 = 4
+- Le troisième nombre dans la liste de gauche est 2. Il n'apparaît pas dans la liste de droite, donc le score de similarité n'augmente pas ( 2 * 0 = 0).
+- Le quatrième numéro, 1, n'apparaît pas non plus dans la liste de droite.
+- Le cinquième numéro, 3, apparaît trois fois dans la liste de droite ; le score de similarité augmente de 9.
+- Le dernier numéro, 3, apparaît trois fois dans la liste de droite ; le score de similarité augmente à nouveau de 9.
+
+Ainsi, pour ces listes d’exemples, le score de similarité à la fin de ce processus est 31 (9 + 4 + 0 + 0 + 9 + 9).
 
 Considérez à nouveau vos listes de gauche et de droite. Quel est leur score de similarité ?
 
