@@ -3,3 +3,4 @@ Advent of Code (Projet)
 
 ** Avancement du projet
 - les fichiers avec les résultats validés pour le ~jour 01~ sont sur le dépôt.
+- les fichiers avec les résultats validés pour le ~jour 02~ sont sur le dépôt.
